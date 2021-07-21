@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "368633061186",
+    "project_id": "minsap-590dd",
+    "storage_bucket": "minsap-590dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368633061186:android:9cbbaf05da4f708f4cb2db",
+        "android_client_info": {
+          "package_name": "com.minsap.tooldata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368633061186-jhg3diuonu8h093bn5p4kgmaf88lh8ho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5GAayeYPbvhg97S9YppD5iv5qM6kdm-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368633061186-hqu465oq4qhodp5q9k02ms0a9l9m27s6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
