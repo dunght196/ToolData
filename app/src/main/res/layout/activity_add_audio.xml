@@ -4,17 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddAudioActivity">
+    tools:context=".AddAlbumActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="347dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Content"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="URL"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@+id/content" />
+
+    <EditText
+        android:id="@+id/image_url"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="ImageUrl"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@+id/url" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/type_category"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_spinner"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@+id/image_url" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/album"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_spinner"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@+id/type_category" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/album" />
 </androidx.constraintlayout.widget.ConstraintLayout>

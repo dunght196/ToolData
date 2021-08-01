@@ -10,10 +10,8 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="169dp"
-        android:text="Button"
+        android:text="Add audio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn1" />
@@ -22,13 +20,10 @@
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
         android:layout_marginTop="108dp"
-        android:layout_marginEnd="175dp"
-        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Add audio"/>
+        android:text="Add album"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
