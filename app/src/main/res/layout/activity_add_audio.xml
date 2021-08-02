@@ -24,7 +24,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="URL"
+        android:hint="AudioUrl"
         android:inputType="textVisiblePassword|textNoSuggestions"
         app:layout_constraintEnd_toEndOf="@id/name"
         app:layout_constraintStart_toStartOf="@id/name"
